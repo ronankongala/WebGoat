@@ -2,7 +2,7 @@
 
 A hands-on AppSec lab wrapping a deliberately vulnerable web application (OWASP WebGoat) with a 3-gate CI/CD security pipeline, container image scanning, DAST scanning, secrets management, and SSO/MFA — mapped against PCI-DSS 4.0 requirements.
 
-**Live repo:** github.com/ronankongala/WebGoat  
+**Live repo:** github.com/ronankongala/appsec-pipeline-lab  
 **Status:** Complete  
 **Stack:** Terraform · GitHub Actions · Semgrep · Checkov · Trivy · OWASP ZAP · HashiCorp Vault · Okta OIDC
 
