@@ -39,7 +39,8 @@ jobs:
 
       - name: Run Checkov IaC Scan
         run: |
-          checkov -f terraform/main.tf \
+          checkov -f Dockerfile \
+            --framework dockerfile \
             --output cli \
             --output json \
             --output-file-path checkov-results \
