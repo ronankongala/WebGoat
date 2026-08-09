@@ -52,3 +52,20 @@ jobs:
         with:
           name: checkov-results
           path: checkov-results/
+
+      - name: Run Trivy container scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: webgoat/webgoat:latest
+          format: table
+          exit-code: 0
+          severity: CRITICAL,HIGH
+
+      - name: Run Trivy filesystem scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: fs
+          scan-ref: .
+          format: table
+          exit-code: 0
+          severity: CRITICAL,HIGH
