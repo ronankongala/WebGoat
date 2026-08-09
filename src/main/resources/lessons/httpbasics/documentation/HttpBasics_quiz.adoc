@@ -1,3 +1,0 @@
-Understanding how the HTTP protocol works is an essential prerequisite for the rest of the exercises in WebGoat.
-
-Time for a quiz!
