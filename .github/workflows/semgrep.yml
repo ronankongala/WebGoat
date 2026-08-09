@@ -33,3 +33,21 @@ jobs:
         with:
           name: semgrep-results
           path: semgrep-results.json
+
+      - name: Install Checkov
+        run: pip install checkov
+
+      - name: Run Checkov IaC Scan
+        run: |
+          checkov -d terraform \
+            --output cli \
+            --output json \
+            --output-file-path checkov-results \
+            --soft-fail
+        continue-on-error: true
+
+      - name: Upload Checkov results
+        uses: actions/upload-artifact@v4
+        with:
+          name: checkov-results
+          path: checkov-results/
