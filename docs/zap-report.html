@@ -1,0 +1,2242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP by Checkmarx Scanning Report</title>
+<link
+	href="zap-report/normalize/normalize.css" rel="stylesheet">
+<link
+	href="zap-report/themes/original/main.css" rel="stylesheet">
+<link
+	href="zap-report/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP by Checkmarx Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="zap-report/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Sun 9 Aug 2026, at 17:26:17</span>
+		</p>
+		<p>ZAP Version: 2.17.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About This Report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report Parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert Counts by Risk and Confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert Counts by Site and Risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert Counts by Alert Type</a></li>
+							<li><a
+								href="#insights">Insights</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(2)</span></a></li>
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert Types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About This Report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report Parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost:8080</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert Counts by Risk and Confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(12.5%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(12.5%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(12.5%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(37.5%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(25.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(25.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(25.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(12.5%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(37.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(37.5%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(37.5%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(25.0%)</span></td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert Counts by Site and Risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost:8080</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(3)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(8)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert Counts by Alert Type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Absence of Anti-CSRF Tokens</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(62.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(62.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(62.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Cookie without SameSite Attribute</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(12.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(62.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Authentication Request Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(12.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Session Management Response Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(25.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">User Controllable HTML Element Attribute (Potential XSS)</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(50.0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>8</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+			
+			<section
+				id="insights">
+				<h3 class="left-header">Insights</h3>
+				<table class="insights-table">
+						<caption>
+						<p>This table shows information that is likely to be very relevant to you, but which is not related to vulnerabilities, or potentially even related to the application in question.</p>
+					</caption>
+					<thead>
+					<tr>
+						<th scope="col">Level</th>
+						<th scope="col">Reason</th>
+						<th scope="col">Site</th>
+						<th scope="col">Description</th>
+						<th scope="col">Statistic</th>
+					</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:8080</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>62 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:8080</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 3xx</div>
+						</td>
+						<td align="center">
+							<div>37 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:8080</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 4xx</div>
+						</td>
+						<td align="center">
+							<div>2 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:8080</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type image/x-icon</div>
+						</td>
+						<td align="center">
+							<div>6 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:8080</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/css</div>
+						</td>
+						<td align="center">
+							<div>26 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:8080</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/html</div>
+						</td>
+						<td align="center">
+							<div>46 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:8080</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>86 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:8080</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method POST</div>
+						</td>
+						<td align="center">
+							<div>13 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:8080</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>15   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:8080</div>
+						</td>
+						<td>
+							<div>Percentage of slow responses</div>
+						</td>
+						<td align="center">
+							<div>2 %</div>
+						</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (239 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/robots.txt HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (135 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404
+Content-Type: text/html;charset=utf-8
+Content-Language: en
+Content-Length: 683
+Date: Sun, 09 Aug 2026 21:23:28 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (683 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/10.1.36&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/WebGoat</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (236 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/WebGoat HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (139 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Content-Type: text/html;charset=UTF-8
+Content-Language: en-US
+Date: Sun, 09 Aug 2026 21:23:28 GMT
+content-length: 1929
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1929 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+    &lt;title&gt;Login Page&lt;/title&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;/WebGoat/css/img/favicon.ico&quot; type=&quot;image/x-icon&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/WebGoat/css/main.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/WebGoat/plugins/bootstrap/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/WebGoat/css/font-awesome.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/WebGoat/css/animate.css&quot;/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;section id=&quot;container&quot;&gt;
+    &lt;header id=&quot;header&quot;&gt;
+        &lt;div class=&quot;brand&quot;&gt;
+            &lt;a href=&quot;/WebGoat/start.mvc&quot; class=&quot;logo&quot;&gt;&lt;span&gt;Web&lt;/span&gt;Goat&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;lessonTitle&quot;&gt;
+        &lt;/div&gt;
+
+    &lt;/header&gt;
+    &lt;section class=&quot;main-content-wrapper&quot;&gt;
+
+        &lt;section id=&quot;main-content&quot;&gt;
+            
+            
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;form action=&quot;/WebGoat/login&quot; method=&#39;POST&#39; style=&quot;width: 200px;&quot;&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label for=&quot;exampleInputEmail1&quot;&gt;Username&lt;/label&gt;
+                    &lt;input autofocus=&quot;dummy_for_thymeleaf_parser&quot; type=&quot;text&quot; class=&quot;form-control&quot;
+                           id=&quot;exampleInputEmail1&quot; placeholder=&quot;Username&quot; name=&#39;username&#39; /&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label for=&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
+                    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Password&quot;
+                           name=&#39;password&#39; /&gt;
+                &lt;/div&gt;
+                &lt;button class=&quot;btn btn-primary btn-block&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
+                &lt;div class=&quot;text-center&quot;&gt;&lt;a href=&quot;/WebGoat/registration&quot;&gt;or register yourself as a new user&lt;/a&gt;&lt;/div&gt;
+            &lt;/form&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            
+        &lt;/section&gt;
+    &lt;/section&gt;
+&lt;/section&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Absence of Anti-CSRF Tokens</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/WebGoat</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">WSTG-v42-SESS-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A01_2025-Broken_Access_Control/">OWASP_2025_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/352.html">CWE-352</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>No Anti-CSRF tokens were found in a HTML submission form.</p>
+
+<p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p>
+
+<p>CSRF attacks are effective in a number of situations, including:</p>
+
+<p>    * The victim has an active session on the target site.</p>
+
+<p>    * The victim is authenticated via HTTP auth on the target site.</p>
+
+<p>    * The victim is on the same local network as the target site.</p>
+
+<p>CSRF has primarily been used to perform an action against a target site using the victim&#39;s privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: &quot;exampleInputEmail1&quot; &quot;exampleInputPassword1&quot; ].</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (236 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/WebGoat HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (139 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Content-Type: text/html;charset=UTF-8
+Content-Language: en-US
+Date: Sun, 09 Aug 2026 21:23:28 GMT
+content-length: 1929
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1929 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+    &lt;title&gt;Login Page&lt;/title&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;/WebGoat/css/img/favicon.ico&quot; type=&quot;image/x-icon&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/WebGoat/css/main.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/WebGoat/plugins/bootstrap/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/WebGoat/css/font-awesome.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/WebGoat/css/animate.css&quot;/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;section id=&quot;container&quot;&gt;
+    &lt;header id=&quot;header&quot;&gt;
+        &lt;div class=&quot;brand&quot;&gt;
+            &lt;a href=&quot;/WebGoat/start.mvc&quot; class=&quot;logo&quot;&gt;&lt;span&gt;Web&lt;/span&gt;Goat&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;lessonTitle&quot;&gt;
+        &lt;/div&gt;
+
+    &lt;/header&gt;
+    &lt;section class=&quot;main-content-wrapper&quot;&gt;
+
+        &lt;section id=&quot;main-content&quot;&gt;
+            
+            
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;form action=&quot;/WebGoat/login&quot; method=&#39;POST&#39; style=&quot;width: 200px;&quot;&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label for=&quot;exampleInputEmail1&quot;&gt;Username&lt;/label&gt;
+                    &lt;input autofocus=&quot;dummy_for_thymeleaf_parser&quot; type=&quot;text&quot; class=&quot;form-control&quot;
+                           id=&quot;exampleInputEmail1&quot; placeholder=&quot;Username&quot; name=&#39;username&#39; /&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label for=&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
+                    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Password&quot;
+                           name=&#39;password&#39; /&gt;
+                &lt;/div&gt;
+                &lt;button class=&quot;btn btn-primary btn-block&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
+                &lt;div class=&quot;text-center&quot;&gt;&lt;a href=&quot;/WebGoat/registration&quot;&gt;or register yourself as a new user&lt;/a&gt;&lt;/div&gt;
+            &lt;/form&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            
+        &lt;/section&gt;
+    &lt;/section&gt;
+&lt;/section&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;form action=&quot;/WebGoat/login&quot; method=&#39;POST&#39; style=&quot;width: 200px;&quot;&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Phase: Architecture and Design</p>
+
+<p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p>
+
+<p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p>
+
+<p>Phase: Implementation</p>
+
+<p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p>
+
+<p>Phase: Architecture and Design</p>
+
+<p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p>
+
+<p>Note that this can be bypassed using XSS.</p>
+
+<p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p>
+
+<p>Note that this can be bypassed using XSS.</p>
+
+<p>Use the ESAPI Session Management control.</p>
+
+<p>This control includes a component for CSRF.</p>
+
+<p>Do not use the GET method for any request that triggers a state change.</p>
+
+<p>Phase: Implementation</p>
+
+<p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Cookie without SameSite Attribute</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/WebGoat/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1275.html">CWE-1275</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A01_2025-Broken_Access_Control/">OWASP_2025_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (277 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/WebGoat/ HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/WebGoat
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (201 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302
+Set-Cookie: JSESSIONID=186A28F5CA376BB1675544D0EF19DFB2; Path=/WebGoat; HttpOnly
+Location: http://localhost:8080/WebGoat/login
+Content-Length: 0
+Date: Sun, 09 Aug 2026 21:23:28 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>JSESSIONID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: JSESSIONID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/WebGoat/css/img/favicon.ico</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (355 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/WebGoat/css/img/favicon.ico HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/WebGoat/login
+Cookie: JSESSIONID=186A28F5CA376BB1675544D0EF19DFB2
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (261 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Last-Modified: Tue, 11 Mar 2025 19:19:26 GMT
+Accept-Ranges: bytes
+Content-Type: image/x-icon
+Content-Length: 10656
+Date: Sun, 09 Aug 2026 21:23:28 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (10656 bytes)</summary>
+				
+				<pre><code>PNG
+
+   IHDR   L   L   ÇQ+   gAMA  ±üa    cHRM  z&amp;    ú   è  u0  ê`  :  pºQ&lt;   bKGD ÿ ÿ ÿ ½§   tIMEå
+3,üåy  (AIDATxÚí¼YÐe×uß÷[{éßØÆ  &#39;Ñ¤&amp;Ú!hÑò¤*&#39;zpÅ±RN(å)ä9o)WepÊ%º3Ê#[&quot;)SH $&amp;bj »¿éNgØ{åaísîmýâ7Ýªîêþ¾{ï9gïµþë¿þk­ùúË×Î¼óËúµ¨àD p»§ñÛûÄzIwùM\Û¢ ò¾_¤(
+8E@`4ÆºmWÄw.BèPq8¼Ã»ò
+Eócâå·pûgq[;#KPTA³äè º®!¨*AÀC£BãöNáFÛàxr^ºñÝ?øw|@;{é&quot;CUQ¢&quot; 2ü,ø×nH¼G³´­í±þ&#39;ïAZ@ûÛe¹ý¬ë@#¤ï³ïFíú1&quot;¡kÐúß j{%±Cû5]É¶F8l¬&quot;y§¸¬´;	ê$Ú»ik$+Ð¢@p ¢Úµúçµ÷ Eë­B(GH5!áº`§êðï³L%iAMì;æ3W^óÂÞ« 1B³ &quot;Z/ mÅí¶E`~1 ºñLªD¤¨­]ÜÞYÜö)$¯PèñÌç¶Y±©ÑÕbDË· gæ!àzQÅiÄe%Ùö)²¨ &gt;Ã·ñÄC´©×äî?Á¶TÌ¬ÜhE4+b³L¾S1xo-a¹°o-´´ÿöpå°³44uzà²Ér$/¼ÄIFD	Ýj½ÈÍ­5Y¹óÈöøshBöÌYTcÜx­Æd!
+hY&quot;£1´5,ffUô+maî!¸býÍsèxÛ,èä
+Ä âl¡Àp,/Qq¨Fd~SF sßÁnEQçìÆË)¦wXpuïY1ty³CdUhßç¬çÌ\[§ ÚBcÀ_ âÁgh!1ó¸É68G\ÛIQÜÚ1&gt;ð¥Ú»¼ÚâºÁj¹ÉÌ +lcÎÍ.d.}§&quot;ºÆ+&gt;ºj½Ob*¶ÐÍ0;ÅÌp¯·~4Ý ÕOB»tóÍs[$\rÉ´y1
+YÃm¡«%º8Iàl`Äþý]´tù,ÃMwAavØbÿ]ÆHFâbF!=í¬ëHÏïj8¿ÆÒdíªÑî-´è|ÎÐpäØê²7Þ¬$¦r¡[X q9&quot; b[Cæ!+èÈ$/ðÓ=Æå	ÒÔiÅ5ØØÛ&gt;XØr&quot;¨]à¢ÝÚEp|Hlj»×zD)J(*×m&quot;QÓ*N2TÜ mnïá¶wCõ¯ «ÕÆÂ¯=£¥Z¸­}L!FD4½@ÄK¸²&quot;ÒuÄå·s
+çKHævNAY 9: õ;ë4áÉSäEèe²Mlktq×þS1Y¬3.Æ#ñä
+1v¶½»fÞþÑn#C#ãíabì`v&#39;hë{7X+@t©ÆdÛ{PCËp£-ó¼¶%6+PL#».m¨ÉxJì:âì×5¾?ªë`Âlø¸)EßÚ7,&lt;&lt;¶YªsH´÷0PÏa¹\»»ÚMI^â|ID`9&#39;£§tv2&lt; :Âjë=eÄ|æ9n¼eÔÁ9èZd~&#39;¨/!!Yaä=tj|-QéDLbDsX-Ç| B½ûwq 
+&gt;&#39;Û&gt;TcÂÉe4-Dì©IÄ&quot;çd#hWvÃ¡KA%AÏ¡(máºÖ\,ajTÅÅ@âDPÜö&gt;R,r¦uGò
+_TsÄ¶AKt1CWKûÞP©.
+#ÃY]H®¬8_8ûqv§Æwô=æÝ«fðàÕ8)p»û0ÞB&#39;èÉ¡KYã8Ñî&quot;ó´Y;EqÑA1BªaãòfW=¥ÌÖÒ7ÃhlÔ5ëÞ£!WXÍ255`p(Ý=AYJ×M¦P)ÊY¢]ËÛ¾?×u|Z_ÄçÈî&gt;LvÐ®1Ø%®T-¯c{çrg&#39;FQ_àª	âbW&#39;;DeX+&#39;ÎÜ*¹«(&quot;YzS&quot;¥av45Ö2±rýÂçÞ¬§ÇWÙF¨ E£ÑD2].Ö%-Èº¥¦w¹¡ßÝGÇÛHpt`9h#£	þÚÉ&gt;t&#39;îÌiüþd{Ù?6;£o½«öÂKpñÂb.Äù
+ÚÎÈf©&quot;³©æ^eeQ/mª¢³#ôèÀxXrQ&#39;ë(?ä°£-Ã¹äÅeÉ3_HQM(£Öaz|bHfn\Rö.UÛ&gt;±áÊâ(&gt;õ3øÛï0,:&lt;¢;¸D&lt;&gt;&quot;¾üzrîÇÏ!ã)rúÜö6Ùõ7Qþü/íîáøîùÒ]xxáºù1÷&#39;WÐù¨âG[(Þ@°?¼±K«0 ¶¹lï%å7Ú,3&lt;Ä¡û)êsð{¯2$¦Q!JbrÞA£}bùÖdL÷G¼ÇmíP&gt;ðòO~··K¼ø&amp;ÍSOÐ&gt;öç°\@9ªÂoïÐ^¸@øñsFR^Wrú,åý¡ø©Æßö!²o1Ë
+-áòeêï~æÿD3º£wÐù¡mnQÕ!h
+0y/+âr6¸Ò®¾#ØÝª8[!eEïyà¾8ä¥/|J{ëS 0¡×U%¨eL÷r¨ §NQÜÿqÊù&lt;²½ÎNè^|ðâÄ&lt;Ãmï Û;dã	\3ÿÝ
+ócâÁeÂÉ®»Ùpfg.çøÝÉèWþ6ùïEÊÊ(Fº×^añFûç]c»µÛ=¸,imöÐZ/GMÓ$#zMpÓ­iil|2 WÞÝS¸ÝkÅR;ÿÛºö!éóWá|ä¥E·í]ÜÖä%øk®£ü¹Ïß~áÂK4ÿ«oý)íÐ½ø#¤,ñ7ßFùÑ#7Þ mñ×§øü/ÀN§þþ?$¾þ*qU£Ë#¸rðê´OqþÆ[,¬ÃíîÝpÝ¯Ó½õ¦¹×tÒ¢Êâ]-¢²û,&#39;HQ&quot;yi2ÙÆmí!ã-ðYZDRËeG¬HáÊÑªiJèßìE¢,Gs»ËÞýª*£ýÁcÔðû4/üÀ88üÞ)&gt;EvË­¸=Ã¤þFÜÙsgÏ&gt;Mùàéþ6º¨ÉÎ]lÝJóõ?6âûö,ÿ#1úÒßÃoïZ&amp;qã­Lþÿ8;¡}î)\QàÄCGìu²jÈ2\¶ò.ºÔ®$´¥ÿYQâvO£Ë914H&gt;ÔÌ:vÁÔ	ñRxÎN{u±¿C9ÍÃßDkËÛÄçHUá¯»êò³CööÑKW¯¿F¡«%nw7âÎ#»ã.4doêW¿;}îÙ&#39;iÐA³#ê?úWÈö.Õ/ÿM\^bpÛT?ÿ ñð²¹_¢±YáDË%¾n¦ÈÀhè³
+]ã[ìev,}#÷ &gt;tóºL\ëPëêhQCÑ*Ð.Ç¡kM ,GHYáöÎPýÊ¯S&lt;ðIºçHóìÓÄ¯¡o¾N·&lt;¦Å&#39;Èd¿á6²;ï¡¸ÿú,¨Ò&lt;ú0«¯}Õ®;ÝA ! [{tþMª¤zðWÁ±øôÏÒ¾ðíf	&#39;C´!YR9Ñ5ô÷ D/¹VHT&lt;cËz5%£mp&gt;#:I¦»f¹:È;²f/ªøÉl2+ô¦ùs×âÎeù{ÿîåç	&#39;GèåùåÎËn²E{xD÷â´|âî{)þó¸ó7P&gt;ø%XÍpç®§{òQÚ¢&quot;¾ó:ÍþKò{Àßt³q¤3ç(îý8ñ¥è^Íôy·!ioì÷ââÒS^Ãved:SõHÕ+
+þ¿½qû!3´]ö~ýe&quot;W´¨»æ¥éC&gt;³üP 6+Â/Ð½ô&lt;Z×h³@Ç¦cM¦¸Sø­=è¬®#¼CóÔwé~ôC{ï§øägÉïþ(áèöéï®ZÂáÛã#dµ¢üÔgÓ.
+Ú5tüáÒ[)K2Àf2ÁU&gt;ð%fR¯ôàzä­ñgXiKGRuªD¶ºó®ÃÖ6RÒ^IRI{sí¼wE5aùíÉ*äôu3¾e&quot;%Åoë#8&gt; yüa¤Y2ýïÿ&#39;º·Þdõ&#39;ÿêU wYÝæOÒ]¸@vÓMFN¢D¢YJ_²Wp1]êý^!Ââîä
+ÒYÚ$bb]ä½#WYhÖÓ­¸Ù*O§Èd;q¬®§DEéáðÆ¬Õ!¨Qµ¢
+­QWu-vÇd7ÝL÷Â3Äù1RiÿÑ¿aü·þ&gt;[¿ù	¯¾B\­o¿A}é-|&#39;HÓÒýèk·&lt;}·½jâj£^,Q¨Oàðª­E_·i} AÍí¿Îÿö×?¤¢ænï¡^¢!É&#39;nmºÁñLäÂ¦¹µ¶%nàt½ù³Ïü&quot;ùÇ&gt;c8Ñ¶h½BâÎ{p7Ü!Ð&gt;ý8ÍÃß@q¸}ÈÜîù}
+ ñäðòs&amp;&#39;U²{ÚRàÖÐ®ÃÅî*çqãï¿Ã%;GféOÒÛÓCõÅ·8&amp;·wÚÊeªÄîfÇPVèÖ2Ùç#ÚÚ0%/°cu&#39;Çtï¼Åèìh¿÷ÂK/VKâ¥wðç¯§yêûÔÿ$ªÑÐêQ¯~ñ#«?ü
+C²ü=Aþ]&amp;L¶ã ¡CEQh§èm-EQ¿üï¸î!3¸ë+%*t-Qczxo7$¶Kå¦¶ WËâümV1dÅz·Tlßy²³®j²;ï¦¸ç&gt;ü5×!Õ·»ok¹@ç&#39;¸Óç ©q§ÏPÜ÷qX,L,ròÛ?øî7ë6&quot;b¥¬pyfòRVMí9û6Ð&quot;éüï&lt;ÿ3zjºö×An;»~UæÚ4ÆÅÔ&quot;$T#³47C»2=©,0ÍM ]Ñ]ø1þÚð×gùÕß§ûÑ3°ã¶¶MÚÞ!»éf²Ûn§¸ó²Ûî¤{îiX­W.Ó&gt;òmÚ§G/_Æ9¿éVÂ/¢ïÐKé} EéþgVÂ#m6E/K$¯ÑÔ¢¤8óÃËèÉ²\àûöóe#aHj-´HY^&amp;fÚ¬ DK^C&gt;Ã-P¡MÍ
+mk$óVÆïwm1C/]¢üØ§qûû4ßù&amp;ÍóÏøöøs×âwöÑo^}öÇ	o¼BxõEÂs? }å¨Âë¯^yüÖ;p{§iüªa£ª´¶4Ã£8ÄxI?QÀ¹X¸²LéaRoV´ã¢µKøß¹óüC¶#q þ&gt;ôI¹!Z2ë½íW3W¨§+Çæº.³ÛªWhh!^ÞÙïñ×]ÃèçâC&amp;^|öÇÏÐ&gt;þèbFxýMê?ýõ3Þ~¯ÖKb×&quot;1Ýr;Õ_ÿeôÒÛ´Ï&lt;MñéÏ^yxáESX3¢KÅ­^ðsÃÆõ/UÅ&#39;¾µÎ+A¼Ç¦ÈxÊþËwßò1ùî;ÈÐû ×uFlËk×ÛuÄäg¿W1]JV$Åj+âÎ
+/¯¾
+m üé¿FqÏ}P7tÏ?CxýeÚ#\~²É+²;î¢zðLó·ýÊß!¿û~²Ûî ¸ç~Â[oßu/:êoü	£mkºà×ô¶ÑËäWY¢¬­Fx$Ë&lt;ÃÿÎÇî~HR=XqBý:éÐç ¨åY&gt;¸ªëü++Ôg¶¡CWMâa¹5 èªÕxåmÜÙód¾wþâ¥wh_x·#MTóÄ+è«¯&quot;âq;û¸½}Üd²üC·ãÆh;GþmWøñ¶e&quot;]M\ÌÐÙ1q~6Ï¬vÐ,¡]ü-~Ðü¥Õ­sMqdTôø§º¦½¾GúÖ´YáVsÃ²¼¼@B``}Í
+]ÍqI7ã©`c6:	./C¦²{&gt;Î¨ÿäk¸é·½Ë+ÃHí`ulº½FÂ7Yü¿_Á?õ(þ¶;ÈN3*ãA&amp;S´iÉî¹îÉG×äzEÏviYMV £h8%¡&quot;Ó«]úlCÊZ?*dåh%+¸:&quot;[tÙ8éSË9:&quot;Yiî¹Z®?S×hËú¿²çÄÚ&quot;ªÖ5Ò¬Ðr«FVÂºô&amp;óú5#¾§¯ÁSÜhLìjÃÖåv=¸xppñ5øî7Z§¼C®¹ó­{2}Lvb^¼` ¯Ü.Ç«&amp;èÉ°¡C¶÷M­Ø¨jÒóxÒm¸WdýOz	µµIYcP.£8k/jëá&quot;TeJ^#ZÏ¡^ÙwcôÒ[´O=ºcºÙ¥Gc4Ë,µ­IÒMöñ9¨ÑAt$:ãÐKHÓ2úÂ¯ãÎ\!é/Þ[ùÅé
+L¶Ñ¼´ÂüÈ¸æ s¥QpF:GY]·ÉPqCj`.Q­I£¹djÜ&gt;tVYWj1B#¸½3dw=`ÚÐB[ºÔÒ÷¶(*{Ñ©YZ´ó5Ï%©Ém(¥&quot;8±úö&quot;eIõÙÏAU&quot;DÓÖÔÚÔ.Kø¤hAeL5 9»u$òoÅ©¥Yt¡ÿCNRm¬VdõÞ°LÖZ/!¶(RM(êçØú&#39;ÿ£Í¶£­qx$$Äì»ziÔ¥¡½ÊDAq.õoMsõÐ=÷¯þüùÈnºÅTºnÝvyÈ*,HrLô1bß2:(]\R9WUzÒ÷OÄëÐÐ íÊ\¦(S]ÓòÆènv-â&lt;Ù=eòþüÍ·Ó=óÝÛ¯C:1víÜÆ5ë?n{Wöu½¦Æ¼U16´í_|ðü³ø[ïD&amp;cÑÉpÅØä®¾ê)çu»JÃF¨ê Ø:$uôå1íÐû¿Ö(É-gë àÔA¨WÈÖã/þmdï4õ·¾ÎòëÿÖZº-Êöò
+®®¡®)ÿÊÏáo»ËrÊØ¥¨uiª¬àZðYj$»ë^¦¿ý?Ýÿ	²Û&gt;î¢1ó¬ét¸×AXmû`XãÕjmj=ÏB»ÂeVRï­Qã}W,}w½D4&amp;vÉ¥íBê4Å&#39;?¿ö&lt;ñÊeG¾e\©Ë!¯¦í}äðòÏºÎzövÿ¿Åâÿü_àÅçÐ®1é½5ýjøÑ_ýùOïßû6Ý¯áÊwæ¬ÉI-¤B+*«éFÙ®Ð+8Iwäµ1 þËwÝôKQRë%tÝúÍï¹h èTé¶åì8Xål./ýßÄ½7S~ädÿ+øÛ?lå;UÊOýùM·Òýèi\I^
+öûÑÅG?FñÙ55$µ+AJøêãð_ßvrÍu÷}ìÌu´ßæûßÁ_w=Ýó?D® £)¾¬ìþ4&quot;¡EÇÄÃKÐv!ÀeH55lÞ&quot;dR/@÷ÈÝ6vÃ¶,õ(PÄfeIµwÉ:1ûSÁßt&#39;þÌ9T ÃÑX.ÈÎßDq×}èrý¯ÿ3ÚYzF48ØÑýð) ÕÏ&gt;Èèoþ]ºÇañûÿÜÈ9ç&#39;,þõ¿À&gt;MvËM==Å_{ÐÚ/&#39;Së*J£1õgÈâ#}~ðng¿ga¶&amp;YhZ¤[á1.ËVLY?:¦XôôUà ´5R¤E¨*î;ÑÕî±¿ ùþ#´þ9áÂËÈésLÿÑ?¡øØ§ÿîÿÇ&#39;q#ÊvYtO|ù³?`ë·þ;êo}}-¹Ï°»cq|@ó?#¼ó6îü?ÿKø4Ýs? ÎN0j²J:å2Ù£ÍÒ²So$Õv­÷Ü1\1±î;ï-©Þ l|v£¬`-IX¤ÕTt©A/¾Îâ+ÿÝ¯	o½¨mmáO¦}æ)Úý¾&quot;Ø7#«`rå÷Â´ÌW_BÄÝpÅçþÅG&gt;xå²%ýõöÉG©þ«o}ëèÞx¯Wæyn]ÜÕÄX~W#«%:?å|è%Q½jôÑõÊº¨óÉ´ëÄ{íÁzÕ¥7¿¶¶w$ÜÐí÷¿¡Ã]{Î;4ËM¿ñVÜÙó¬¾òÏ¬Úy4ÏÐºtºù}§úâßeõýï¢õwözûò{ïcõ?¢yäÛpt»üîû)&gt;ó9²o¥;¸lsEÖ5ñä;ë][ÎÐÉ6²µmý#ÞÚ&quot;¢Øpë©Î0d¢VVÒ®1+Ë×jØnzµvÅ}bNèÌz¶¾)Ú5«Të¸Ä»ÖÚÞzm;+´d±ièÉ$ªÈöÕç¿Û?/!!âÎ^Cv÷ýt}ú_ý.ÝÅW¡WÞ¦{ãuÂÁ!¿õ÷È2o?»»øímHun±DáãhV¸éT6á¶wÑÙ±mÛP]LæD¬KyµÀmï£Y1Tzb§ï*³÷ÚìÐú_¬è´o£´ìCCgZÁ]^$jÈ¶§¿ðE²[ncõþËó{ÄHñÏÝr;AMÌ»æZ¯X=þ¡­¡,blBQÂ¬rËmvS§ñ2£ÕuPÏ­U½Y¡«¡iGc2&#39;¨Ï6ô1UDÈ@,ñmÖDá¹eM×ìî]´#´DgÎ(ý8åSµÀ¨O½ï¡ÅíìßþQò&gt;F~Ç]hgEFdgüî{a4ÂµîU®Üî)âÑÍUV1LST¿òë¸í]²ë®Ç]w]*G+òÖ+SIò
+É3\¶VcÂÉÌHc¤d²»Öu6 H#d¦Ùh446åcí/©þ¦ldÒÏRF|^z9[L!PQfC7Îá#\ºDÏÿÆoB4Ï&gt;ß?Ü=BP²»?»áæTó¸ë¯7¶-nùÙ ÎÑ&lt;ý=ªO~ðöEÂÉùwÑ=û$Ý3OÞxðÎ[Öp&lt;ÝB@ýÞ4/ÇWÐBNl.äjØ^Ó
+Mã,ZhVHiÍÿ*})DmîQG0]ÅÇ±´Ñ[aÌ_÷vÄ£ôä7Ò&lt;õ}V_ý=ª_úþÆ¬$%ÙÙëð[»Ä+ñâ#÷Ó?O&lt;&gt;ÀU#ÜxLP±]UÂK/²xù%3Ú;Åäüco~úÿÍÒ ×rFXÍqEnnÉtÇ8äqEíyzåå*b 	ª±Õ¶µ&#39;ªï¡d4éµØ¯v!ú¦~¾y­I$ÏÀ9Â	_Gs¯ÿÄ+èyü#÷QÞ÷)ÁG8¸LûÔÈxê¿OÉN%»î4vÉòS«k­ztÕ×¾Jóø£	&amp;Òôð¡.Âñe´mp£-dï¬5¡¨BÓù­Å°þ©&quot;Ù0KÕPµÊ¬µ]Ä,Nû×ÞC5E~HÕÀ¿ÄÐâTMÂÅ×ixîÇÏÓ]xºæ©ÇÈø4£ßøÄÙ±%æ¡Ãïí3û¿ÿ/ÜSäwßKvËmèx»ùVÜã%2º6WÑåöGP/ÈÎ¾ ëºäÖp|hQr{ßz2öÎ¦M­ÀûµWiD3üo¿þ!\J¡5s¨s¶¦)CÄì%¢`L9¶à´`FC÷¢~{ß¢éâÈR¥KoÓ=ó$¨â]FÓ]xâc¦ü©Fvvñg¯AÆSoöGñ×Þ@vaNé~ü,ñâk8ªÔv-Üxj3ßÕ*#Å{ÓðBU¯¬!¹,pÕØú+ÃsµPOÐÃüï8ÿÐ:ÙèJQ¡Ë¹Õö6Ìi¯©õE«$¬&amp;6
+Ó6IlëM,õÍN÷Rþ¨0;åÌFi2gEÙW~D|ûMò&lt;@q÷GMYõ¢cõïÿîG? \ÆïÆ»Î,é©GÐ+¬^jk[&quot;)Cm1·{¬*#©!ÕIïiW(/Çt{1 «9áø
+.´©O?=½ ¡Eüñþxu¤Ô¾Seù4çXòàÉ]]*¿EçÐ,¦K½Xio}Y!Ò&lt;þôè
+Õ_ÿ5òù«ÈÖü¾û)n½öÂKÔßøw´ß{wîþìõèr8A©­f©~ZNLA]ãm#Ê³ct~Ä®ÝÁñAÐö.8wÎJÒvÇÿÎíç¢o½Öh%¨jØ6©Ñ,µ«È+n&amp;Îã§[HS£Í2iákÐtÞ![»¦^6+´µ{)rdºFòj&amp;­Â;ïÐ&gt;ùáâÄTºo¾a
+Éb^&gt; ¾ù*:?±SF
+C@»X¯¬¨²81-Ífc¬]U¶CbºÚ°6¯õÌb¬×¾ìogÕÐ³tDBR/zuBÁÍõù¼°awgã+)å7õuH¯¬ë°WDÓ\uß¸ÛQªÙÚAðæwÞ¿eÁ(eOÝ@!Âdl&lt;µù© a BDcméßìÈ¬-	ZMM¡9&gt;åyÙìU¸Êz]e²gFTNÈ®bì&quot;¦`\Å&amp;¡Óp9ÞULN6B¯÷æÈÆ(áF.êÎç,êZ¾oÆS´,ñÛ»VöKê:Êí£ô&amp;=Ð4.á&#39;;ÄÑVêYm4¶&amp;Jâ¬{µâM½Lç[lãÊ1Ùþ9ÂbËc¤¦ÚmÎæðïZ0°aË¬(âN*If ®=ÅM´ÆNI­EÎ8Åg©Í§*P_íVPiC&quot;&#39;jgã¡#t­M§uµRúqèwôÈ©3H×ØÔíj¶5.lL°¡^ Í0á¦»ÈxN®ªYVÓ³AÚÕ{,ð«båü¶ò*eÀÒ&quot;M+öÚpu8KÙ=PV¦î?$¹®ýÕ¨gh½&quot;6ÍOôÚm­¥&lt;·ï/+Ã ­}Zóo\-Ð¦¶àTó¥åÓìZÎ»Ñ.\
+bÍpxå&#39;Lm\&amp;Y/7¦%6(e©¦O,J:JT¿o£ìÌ¢ÕÜÂ½¤¤]SFú£e°XÚv	û½émXRAFêÆ@&gt;+l¬ÃxL¶põÂ¦sK¤­ÀØ¬çñ¡¸]ëIçf8bìÐã$¯ÿaýï!Eõãk¥u½Q00ßX°Á{kì¯éÄ¾»&#39;³KÊwÒGdº£ånjhVüëÙà[ LÙµ¦¤.gÆ½Æ[Èt_Na´4ë],L Udqj½3ÖíwrB·£Ä÷rIÒi&quot;jÚüU³×*óTpÞ¢àirm©¥HYÆös$µT¹«ò)q© Ï0Z£H×°/)Ó¾@ÒH6Ö¡QºFÖ&amp;Ý¦»Èh+ÇÈ¸%4+´[ßmììáöÎvµº!Áæ&#39;LRº@´2YWÈ2ïl&gt;h|+kNý­¢:|ËàneèÎÞÐ¥ÓGÎÜ
+¨]kØêâôTÉ.ÚÕöóµS¥»Z­³JÄ,¶ Í·e&#39;?¹¼°¬Ð¥]XOÛrL¶¬é¦kyÄ+KüÈå%ºL¥·ATRê×î:kÌ¢èyQÑ2©18_¥~´%D5ú°8±R_×!ªtIÕuÞórPXÉ2t-FèÖºãæG¶=K¤}Y@º=&gt;Aë¸»+FvÈ¦6Gz¨P¿7è8%·,¬Fß¢	;2g0½;g¹ Ðô&quot;YiÌ:Uz·wÑ¸_\ñéºëé2I²­5/ ÎÒÑÄEò9²µc- 9ÌO¬!YÃ¸¶)ýBÑÊA;§ÑIå&#39;Y:ùÅY½àÓ êû,F`$¯Þ,@4¡Dbð*i[WH²Ì¢bg»ÖüGdà5¡0; Y©Ü ô§hýAFÚ¢V+8&gt;°Æx#\ê&quot;Ë,2kXqHX¯ðz8\[,1luÅ­Fæ5ïaéo;Rë·ðæ&#39;rH5õ©X¹M}&amp;ßús6PÏ¨í¤OÐl\&#39;t&amp;iRþHØ½¼$¨U¬ÇÖYUvh\5¶Ñæj.Ñå	¡¶èêÆDxpÙ°{4]w³²ÞðØ¼×¥bÚÑ4î×Ô=Ú¬é-*\qÅ&lt;/í¬ñØÔRêqvh²N^ Õ-Jdï,hÄu-ÚÙ´+KÛÖxX°Óå6ÈëVRgî·VKÇ[vÔÃöq±åÌTÚNÞ¢©¸cMÃzp	&#39;ënLÝ`ýÐãÃ÷ýMßLa\Hß!4+EÀ©LO Åp¯JI®d%èÉZ-³¶Y++£,GHÄ@¥u]êE«­àÜÔHW§¦&amp;KXÌ ^W3Üd)-*j5±ÎùÜê°ÒÀ´5ñø
+ÊÀ¥ÐÍª÷jÎÈ/ýä]­w9q©Ç&quot;µco¨ieme³©¤
+6ZÌ*ìþ½mum-º+rTr$Øwhº´eÝxlQ`nêL¾Þà~$9qÉÙ±Eírb Rl±nl&amp;bë&quot;ÄºFc¸ÜÖ¡¯¨©6{þòõ¯ÿ¯ÿZHOmfÿKÊ   %tEXtdate:create 2021-10-31T13:51:44+00:00MtL   %tEXtdate:modify 2021-10-31T13:51:44+00:00&lt;)+ð   WzTXtRaw profile type iptc  xãòqV((ÊOËÌIåR #.c#K D4Ãd#³T ËØÔÈÄÌÄÄËH J. êtòB5    IEND®B`</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-0-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Authentication Request Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost:8080/WebGoat/login</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given request has been identified as an authentication request. The &#39;Other Info&#39; field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to &quot;Auto-Detect&quot; then this rule will change the authentication to match the request identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>userParam=username</p>
+
+<p>userValue=ZAP</p>
+
+<p>passwordParam=password</p>
+
+<p>referer=http://localhost:8080/WebGoat/login</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (411 bytes)</summary>
+				
+				<pre><code>POST http://localhost:8080/WebGoat/login HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost:8080/WebGoat/login
+content-length: 25
+Cookie: JSESSIONID=186A28F5CA376BB1675544D0EF19DFB2
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (25 bytes)</summary>
+				
+				<pre><code>username=ZAP&amp;password=ZAP</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (125 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302
+Location: http://localhost:8080/WebGoat/login?error
+Content-Length: 0
+Date: Sun, 09 Aug 2026 21:23:29 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>username</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>password</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Session Management Response Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/WebGoat/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given response has been identified as containing a session management token. The &#39;Other Info&#39; field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to &quot;Auto-Detect&quot; then this rule will change the session management to use the tokens identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:JSESSIONID</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (277 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/WebGoat/ HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/WebGoat
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (201 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302
+Set-Cookie: JSESSIONID=186A28F5CA376BB1675544D0EF19DFB2; Path=/WebGoat; HttpOnly
+Location: http://localhost:8080/WebGoat/login
+Content-Length: 0
+Date: Sun, 09 Aug 2026 21:23:28 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>JSESSIONID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>JSESSIONID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">User Controllable HTML Element Attribute (Potential XSS)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost:8080/WebGoat/register.mvc</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A05_2025-Injection/">OWASP_2025_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/20.html">CWE-20</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p>
+
+<p>http://localhost:8080/WebGoat/register.mvc</p>
+
+<p>appears to include user input in:</p>
+
+<p>a(n) [input] tag [value] attribute</p>
+
+<p>The user input found was:</p>
+
+<p>matchingPassword=ZAP</p>
+
+<p>The user-controlled value was:</p>
+
+<p>zap</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (425 bytes)</summary>
+				
+				<pre><code>POST http://localhost:8080/WebGoat/register.mvc HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost:8080/WebGoat/registration
+content-length: 58
+Cookie: JSESSIONID=186A28F5CA376BB1675544D0EF19DFB2
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (58 bytes)</summary>
+				
+				<pre><code>username=ZAP&amp;password=ZAP&amp;matchingPassword=ZAP&amp;agree=agree</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (139 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Content-Type: text/html;charset=UTF-8
+Content-Language: en-US
+Date: Sun, 09 Aug 2026 21:23:29 GMT
+content-length: 4408
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4408 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+    &lt;title&gt;Login Page&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/WebGoat/css/main.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/WebGoat/plugins/bootstrap/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/WebGoat/css/font-awesome.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/WebGoat/css/animate.css&quot;/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;section id=&quot;container&quot;&gt;
+    &lt;header id=&quot;header&quot;&gt;
+        &lt;div class=&quot;brand&quot;&gt;
+            &lt;a href=&quot;/WebGoat/start.mvc&quot; class=&quot;logo&quot;&gt;&lt;span&gt;Web&lt;/span&gt;Goat&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;lessonTitle&quot;&gt;
+        &lt;/div&gt;
+
+    &lt;/header&gt;
+    &lt;section class=&quot;main-content-wrapper&quot;&gt;
+
+        &lt;section id=&quot;main-content&quot;&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;Register&lt;/legend&gt;
+                &lt;form class=&quot;form-horizontal&quot; action=&quot;/WebGoat/register.mvc&quot; method=&#39;POST&#39;&gt;
+
+                    &lt;div class=&quot;form-group has-error&quot;&gt;
+                        &lt;label for=&quot;username&quot; class=&quot;col-sm-2 control-label&quot;&gt;Username&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;input autofocus=&quot;dummy_for_thymeleaf_parser&quot; type=&quot;text&quot; class=&quot;form-control&quot;
+                                   id=&quot;username&quot; placeholder=&quot;Username&quot; name=&#39;username&#39; value=&quot;ZAP&quot;/&gt;
+                        &lt;/div&gt;
+                        &lt;span&gt;can only contain lowercase letters, digits, and -&lt;br /&gt;size must be between 6 and 45&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group has-error&quot;&gt;
+                        &lt;label for=&quot;password&quot; class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;password&quot; placeholder=&quot;Password&quot;
+                                   name=&#39;password&#39; value=&quot;ZAP&quot;/&gt;
+                        &lt;/div&gt;
+                        &lt;span&gt;size must be between 6 and 10&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group has-error&quot;&gt;
+                        &lt;label for=&quot;matchingPassword&quot; class=&quot;col-sm-2 control-label&quot;&gt;Confirm password&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;matchingPassword&quot; placeholder=&quot;Password&quot;
+                                   name=&#39;matchingPassword&#39; value=&quot;ZAP&quot;/&gt;
+                        &lt;/div&gt;
+                        &lt;span&gt;size must be between 6 and 10&lt;/span&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label class=&quot;col-sm-2 control-label&quot;&gt;Terms of use&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-6&quot;&gt;
+                            &lt;div style=&quot;border: 1px solid #e5e5e5; height: 200px; overflow: auto; padding: 10px;&quot;&gt;
+                                &lt;p &gt;While running this program your machine will be extremely vulnerable to attack.You should disconnect from the Internet while using this program. WebGoat&amp;#39;s default configuration binds to localhost to minimize the exposure.&lt;/p&gt;
+                                &lt;p&gt;This program is for educational purposes only. If you attempt these techniques without authorization, you are very likely to get caught. If you are caught engaging in unauthorized hacking, most companies will fire you. Claiming that you were doing security research will not work as that is the first thing that all hackers claim.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;div class=&quot;col-sm-6 col-sm-offset-2&quot;&gt;
+                            &lt;div class=&quot;checkbox&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;input type=&quot;checkbox&quot; name=&quot;agree&quot; value=&quot;agree&quot;/&gt;&lt;p&gt;Agree with the terms and conditions&lt;/p&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;div class=&quot;col-sm-offset-2 col-sm-6&quot;&gt;
+                            &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Sign up&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/fieldset&gt;
+        &lt;/section&gt;
+    &lt;/section&gt;
+&lt;/section&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>matchingPassword</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert Types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Absence of Anti-CSRF Tokens</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10202/">Absence of Anti-CSRF Tokens</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>9</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://cwe.mitre.org/data/definitions/352.html">https://cwe.mitre.org/data/definitions/352.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Cookie without SameSite Attribute</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie without SameSite Attribute</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site">https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Authentication Request Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10111/">Authentication Request Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Session Management Response Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Session Management Response Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>User Controllable HTML Element Attribute (Potential XSS)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10031/">User Controllable HTML Element Attribute (Potential XSS)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/20.html">20</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>20</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
